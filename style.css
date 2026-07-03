@@ -74,3 +74,11 @@ footer {
   padding: 20px;
   background: #06131d;
 }
+hero-banner {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: 300px !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  display: block !important;
+}
