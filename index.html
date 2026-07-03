@@ -5,24 +5,28 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Nam Hoi Aquarium Shop</title>
+<title>Nam Hoi Aquarium Shop | 南海水族館 | Kedai Akuarium Nam Hoi</title>
 
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<!-- ================= HEADER ================= -->
 <header>
+
 <div class="container">
 
 <h1>Nam Hoi Aquarium</h1>
 
+<!-- Language -->
 <div class="lang-switch">
 <button onclick="setLang('zh')">中文</button>
 <button onclick="setLang('en')">EN</button>
 <button onclick="setLang('bm')">BM</button>
 </div>
 
+<!-- NAV -->
 <nav>
 <a href="#about" data-i18n="nav_about">About</a>
 <a href="#products" data-i18n="nav_products">Products</a>
@@ -32,38 +36,51 @@
 </div>
 </header>
 
-<!-- HERO -->
+<!-- ================= HERO ================= -->
 <section class="hero">
 
-  <img src="banner.png" class="hero-banner">
+<!-- ⭐ 你已改成 banner -->
+<img src="banner.png" class="hero-banner" alt="Nam Hoi Aquarium Banner">
 
-  <div class="hero-text">
-      ...
-  </div>
-
-</section>
+<!-- TEXT OVERLAY -->
+<div class="hero-text">
 
 <h2 data-i18n="hero_title">Welcome</h2>
 
 <p data-i18n="hero_sub">Aquarium Shop</p>
 
-<a class="btn" href="https://wa.me/60127197886">WhatsApp</a>
+<p>
+專業水族用品｜觀賞魚｜水草｜魚缸設備<br>
+Professional Aquarium Shop • Fish • Plants • Aquarium Equipment<br>
+Kedai Akuarium Profesional • Ikan Hiasan • Tumbuhan Akuatik
+</p>
+
+<!-- BUTTONS -->
+<div>
+<a class="btn" href="https://wa.me/60127197886" target="_blank">WhatsApp</a>
 
 <a class="btn btn-outline"
-href="https://maps.google.com/?q=7G+Jalan+Perdana+5+Kuala+Lumpur">
+href="https://maps.google.com/?q=7G+Jalan+Perdana+5+Kuala+Lumpur"
+target="_blank">
 Maps
 </a>
+</div>
 
 </div>
 </section>
 
-<!-- ABOUT -->
+<!-- ================= ABOUT ================= -->
 <section id="about" class="section">
-<h2 data-i18n="about_title">About</h2>
-<p data-i18n="about_text"></p>
+
+<h2 data-i18n="about_title">About Us</h2>
+
+<p data-i18n="about_text">
+We provide healthy fish and aquarium supplies.
+</p>
+
 </section>
 
-<!-- PRODUCTS -->
+<!-- ================= PRODUCTS ================= -->
 <section id="products" class="section dark">
 
 <h2 data-i18n="product_title">Products</h2>
@@ -81,17 +98,28 @@ Maps
 
 </section>
 
-<!-- CONTACT -->
+<!-- ================= CONTACT ================= -->
 <section id="contact" class="section">
 
 <h2 data-i18n="contact_title">Contact</h2>
 
-<p data-i18n="address"></p>
+<p>
+📍 7G, Jalan Perdana 5, Taman Indah Perdana, Kuala Lumpur
+</p>
 
-<p>012-719 7886 / 016-658 0408</p>
+<p>
+📞 012-719 7886 / 016-658 0408
+</p>
 
-<p data-i18n="hours"></p>
+<p>
+💬 WhatsApp 012-719 7886 / 016-658 0408
+</p>
 
+<p data-i18n="hours">
+🕒 Mon-Sat 12:30pm - 10:00pm | Sun 12:30pm - 8:00pm
+</p>
+
+<!-- MAP -->
 <div class="map">
 <iframe
 src="https://maps.google.com/maps?q=7G%20Jalan%20Perdana%205%20Kuala%20Lumpur&output=embed">
@@ -100,10 +128,14 @@ src="https://maps.google.com/maps?q=7G%20Jalan%20Perdana%205%20Kuala%20Lumpur&ou
 
 </section>
 
+<!-- ================= FOOTER ================= -->
 <footer>
-<p data-i18n="footer"></p>
+
+<p data-i18n="footer">© 2010 Nam Hoi Aquarium</p>
+
 </footer>
 
+<!-- JS -->
 <script src="script.js"></script>
 
 </body>
