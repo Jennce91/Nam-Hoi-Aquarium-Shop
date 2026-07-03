@@ -16,14 +16,15 @@ line-height:1.6;
 }
 
 /* =========================
-   HEADER
+   HEADER (FIXED MOBILE ISSUE)
 ========================= */
 
 header{
-background:#0b2a3d;
 position:sticky;
 top:0;
-z-index:999;
+z-index:9999;
+background:#0b2a3d;
+width:100%;
 }
 
 .container{
@@ -32,8 +33,10 @@ justify-content:space-between;
 align-items:center;
 padding:15px 20px;
 flex-wrap:wrap;
+gap:10px;
 }
 
+/* NAV */
 nav a{
 color:white;
 margin:0 10px;
@@ -41,6 +44,7 @@ text-decoration:none;
 font-weight:500;
 }
 
+/* LANGUAGE BUTTONS */
 .lang-switch button{
 margin:0 3px;
 padding:5px 10px;
@@ -53,7 +57,7 @@ font-size:12px;
 }
 
 /* =========================
-   HERO (IMPORTANT FIX)
+   HERO (FIXED + GRADIENT)
 ========================= */
 
 .hero{
@@ -62,28 +66,28 @@ width:100%;
 overflow:hidden;
 }
 
-/* Banner 不裁切版本 */
+/* banner */
 .hero-banner{
 width:100%;
 height:auto;
 display:block;
 }
 
-/* ⭐ 漸層遮罩（高級感核心） */
+/* ⭐ 高級漸層遮罩 */
 .hero::before{
 content:"";
 position:absolute;
 inset:0;
 background:linear-gradient(
-    to right,
-    rgba(0,0,0,0.55),
-    rgba(0,0,0,0.15),
-    rgba(0,0,0,0.55)
+to right,
+rgba(0,0,0,0.55),
+rgba(0,0,0,0.15),
+rgba(0,0,0,0.55)
 );
 z-index:1;
 }
 
-/* ⭐ 內容置中（穩定版） */
+/* HERO TEXT CENTER (FIXED) */
 .hero-text{
 position:absolute;
 inset:0;
@@ -96,20 +100,20 @@ padding:20px;
 z-index:2;
 }
 
-/* 標題 */
 .hero-text h2{
 font-size:32px;
 margin-bottom:10px;
 }
 
-/* 副標 */
 .hero-text p{
-margin-bottom:15px;
-opacity:0.95;
+margin-bottom:10px;
 max-width:600px;
 }
 
-/* 按鈕 */
+/* =========================
+   BUTTONS
+========================= */
+
 .btn{
 display:inline-block;
 padding:10px 20px;
@@ -145,7 +149,7 @@ background:#0b2a3d;
 }
 
 /* =========================
-   PRODUCTS GRID
+   GRID
 ========================= */
 
 .grid{
@@ -168,7 +172,7 @@ background:#18506f;
 }
 
 /* =========================
-   CONTACT
+   MAP
 ========================= */
 
 .map iframe{
@@ -191,11 +195,32 @@ color:#aaa;
 }
 
 /* =========================
-   MOBILE FIX
+   MOBILE FIX (IMPORTANT)
 ========================= */
 
 @media(max-width:768px){
 
+.container{
+flex-direction:column;
+text-align:center;
+align-items:center;
+}
+
+/* nav 不爆掉 */
+nav{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:8px;
+}
+
+/* 按鈕變小 */
+.btn{
+padding:8px 14px;
+font-size:14px;
+}
+
+/* hero 字縮小 */
 .hero-text h2{
 font-size:22px;
 }
@@ -203,16 +228,4 @@ font-size:22px;
 .hero-text p{
 font-size:14px;
 }
-
-.container{
-flex-direction:column;
-gap:10px;
-}
-
-nav{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-}
-
 }
