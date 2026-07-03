@@ -14,7 +14,7 @@ header {
   background: #0b2a3d;
   position: sticky;
   top: 0;
-  z-index: 1000;
+  z-index: 9999;
 }
 
 /* NAV */
@@ -29,7 +29,7 @@ nav a {
   padding: 5px 10px;
 }
 
-/* HERO SECTION */
+/* HERO */
 .hero {
   padding: 0;
   margin: 0;
@@ -37,13 +37,13 @@ nav a {
   background: #071824;
 }
 
-/* ⭐ BANNER（完整顯示，不裁切） */
+/* ⭐ 強制 Banner（核心修正） */
 .hero-banner {
-  width: 100%;
-  height: auto;
-  max-height: 500px;
-  display: block;
-  object-fit: contain;
+  width: 100% !important;        /* 強制滿寬 */
+  height: 300px !important;      /* ⭐ 固定高度 */
+  object-fit: cover !important;  /* 填滿 + 裁切 */
+  object-position: center !important;
+  display: block !important;
 }
 
 /* SECTIONS */
