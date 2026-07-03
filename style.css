@@ -1,84 +1,312 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #071824;
-  color: white;
+/* =========================
+   GLOBAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* HEADER */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: #071824;
+    color: white;
+    line-height: 1.8;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* =========================
+   HEADER
+========================= */
+
 header {
-  padding: 15px;
-  background: #0b2a3d;
-  position: sticky;
-  top: 0;
-  z-index: 999;
+    background: rgba(11, 42, 61, 0.95);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 2px 10px rgba(0,0,0,.3);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+}
+
+header h1 {
+    font-size: 28px;
+    color: #6dd5ff;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
 }
 
 nav a {
-  margin-right: 15px;
-  color: white;
-  text-decoration: none;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .3s;
 }
 
-/* HERO */
+nav a:hover {
+    color: #6dd5ff;
+}
+
+/* =========================
+   HERO
+========================= */
+
 .hero {
-  padding: 0;
-  margin: 0;
+    width: 100%;
+    background: #071824;
 }
 
-/* ⭐ BANNER (電腦版) */
-img.hero-banner {
-  width: 100%;
-  height: 320px;
-  object-fit: cover;
-  object-position: center;
-  display: block;
+.hero-banner {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
-/* 📱 手機版自動調整 */
-@media (max-width: 768px) {
-  img.hero-banner {
-    height: 180px;
-  }
+/* =========================
+   WELCOME
+========================= */
+
+.welcome {
+    text-align: center;
+    padding: 70px 20px;
 }
 
-/* SECTIONS */
+.welcome h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.welcome p {
+    color: #cfd8dc;
+    font-size: 20px;
+}
+
+.hero-buttons {
+    margin-top: 35px;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.btn {
+    display: inline-block;
+    padding: 14px 30px;
+    margin: 10px;
+    border-radius: 8px;
+    background: #1aa3ff;
+    color: white;
+    text-decoration: none;
+    transition: .3s;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #0088de;
+    transform: translateY(-3px);
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid #1aa3ff;
+}
+
+.btn-outline:hover {
+    background: #1aa3ff;
+}
+
+/* =========================
+   SECTION
+========================= */
+
 .section {
-  padding: 50px 20px;
-  text-align: center;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+.section p {
+    max-width: 900px;
+    margin: auto;
 }
 
 .dark {
-  background: #0b2a3d;
+    background: #0b2a3d;
 }
 
-/* GRID */
+/* =========================
+   GRID
+========================= */
+
 .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 25px;
+    margin-top: 45px;
 }
 
 .card {
-  background: #123d55;
-  padding: 20px;
-  border-radius: 10px;
+    background: #123d55;
+    border-radius: 15px;
+    padding: 35px 25px;
+    transition: .35s;
+    box-shadow: 0 8px 20px rgba(0,0,0,.25);
 }
 
-/* BUTTON */
-.btn {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px 20px;
-  background: #1aa3ff;
-  color: white;
-  border-radius: 5px;
-  text-decoration: none;
+.card:hover {
+    transform: translateY(-8px);
+    background: #18506f;
 }
 
-/* FOOTER */
+.card h3 {
+    margin: 15px 0;
+}
+
+.card p {
+    color: #d7d7d7;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+    margin-top: 40px;
+}
+
+.info {
+    text-align: left;
+}
+
+.info h3 {
+    margin-top: 25px;
+    color: #6dd5ff;
+}
+
+.info a {
+    color: white;
+    text-decoration: none;
+}
+
+.info a:hover {
+    color: #6dd5ff;
+}
+
+.map iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+    border-radius: 15px;
+}
+
+/* =========================
+   FLOATING WHATSAPP
+========================= */
+
+.floating-whatsapp {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #25D366;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    text-decoration: none;
+    box-shadow: 0 10px 20px rgba(0,0,0,.35);
+    transition: .3s;
+}
+
+.floating-whatsapp:hover {
+    transform: scale(1.1);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
 footer {
-  text-align: center;
-  padding: 20px;
-  background: #06131d;
+    background: #041018;
+    text-align: center;
+    padding: 30px;
+    color: #aaa;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width:900px){
+
+header .container{
+    flex-direction:column;
+    gap:15px;
+}
+
+header h1{
+    font-size:24px;
+}
+
+nav{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.welcome h2{
+    font-size:32px;
+}
+
+.section h2{
+    font-size:30px;
+}
+
+.contact{
+    grid-template-columns:1fr;
+}
+
+.map iframe{
+    height:320px;
+}
+
+.grid{
+    grid-template-columns:1fr;
+}
+
+.floating-whatsapp{
+    width:55px;
+    height:55px;
+    font-size:28px;
+}
+
 }
