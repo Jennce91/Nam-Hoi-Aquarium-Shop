@@ -2,292 +2,117 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nam Hoi Aquarium Shop</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
+<title>Nam Hoi Aquarium Shop | 南海水族館 | Kedai Akuarium Nam Hoi</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<!-- HEADER -->
 <header>
 
-    <div class="container">
+<div class="container">
 
-        <h1>Nam Hoi Aquarium Shop</h1>
+<h1>Nam Hoi Aquarium</h1>
 
-        <nav>
+<div class="lang">
 
-            <a href="#about">About</a>
+<button onclick="setLang('zh')">中文</button>
+<button onclick="setLang('en')">EN</button>
+<button onclick="setLang('bm')">BM</button>
 
-            <a href="#products">Products</a>
+</div>
 
-            <a href="#contact">Contact</a>
+<nav>
+<a href="#about" data-i18n="nav_about">About</a>
+<a href="#products" data-i18n="nav_products">Products</a>
+<a href="#contact" data-i18n="nav_contact">Contact</a>
+</nav>
 
-        </nav>
-
-    </div>
+</div>
 
 </header>
 
-<!-- Banner -->
-
+<!-- HERO -->
 <section class="hero">
 
-    <img src="logo.png"
-         class="hero-banner"
-         alt="Nam Hoi Aquarium">
+<img src="logo.png" class="hero-banner" alt="banner">
 
-</section>
+<div class="hero-text">
 
-<!-- Welcome -->
+<h2 data-i18n="hero_title"></h2>
 
-<section class="welcome">
+<p data-i18n="hero_sub"></p>
 
-    <h2>Welcome to Nam Hoi Aquarium Shop</h2>
+<div class="hero-btns">
 
-    <p>
+<a class="btn" href="https://wa.me/60127197886">WhatsApp</a>
 
-        Professional Aquarium Shop in Kuala Lumpur
+<a class="btn btn-outline"
+href="https://maps.google.com/?q=7G+Jalan+Perdana+5+Kuala+Lumpur">
+Maps
+</a>
 
-    </p>
+</div>
 
-    <div class="hero-buttons">
-
-        <a class="btn"
-           href="https://wa.me/60127197886"
-           target="_blank">
-
-            WhatsApp
-
-        </a>
-
-        <a class="btn btn-outline"
-           href="https://maps.google.com/?q=7G,+Jalan+Perdana+5,+Taman+Indah+Perdana,+52100+Kuala+Lumpur"
-           target="_blank">
-
-            Google Maps
-
-        </a>
-
-    </div>
+</div>
 
 </section>
 
 <!-- ABOUT -->
+<section id="about" class="section">
 
-<section class="section" id="about">
+<h2 data-i18n="about_title"></h2>
 
-<h2>About Us</h2>
-
-<p>
-
-Nam Hoi Aquarium Shop provides quality ornamental fish,
-goldfish, aquarium tanks, aquatic plants and aquarium accessories.
-
-We are committed to providing healthy fish, quality products and friendly customer service.
-
-</p>
+<p data-i18n="about_text"></p>
 
 </section>
 
 <!-- PRODUCTS -->
+<section id="products" class="section dark">
 
-<section class="section dark" id="products">
-
-<h2>Our Products</h2>
-
-<div class="grid">
-
-<div class="card">
-
-🐠
-
-<h3>Ornamental Fish</h3>
-
-<p>Healthy and colourful ornamental fish.</p>
-
-</div>
-
-<div class="card">
-
-🐟
-
-<h3>Goldfish</h3>
-
-<p>Various types of beautiful goldfish.</p>
-
-</div>
-
-<div class="card">
-
-🌿
-
-<h3>Aquatic Plants</h3>
-
-<p>Fresh aquatic plants for aquascaping.</p>
-
-</div>
-
-<div class="card">
-
-🏝️
-
-<h3>Aquarium Tank</h3>
-
-<p>Glass tanks and complete aquarium sets.</p>
-
-</div>
-
-<div class="card">
-
-🧪
-
-<h3>Accessories</h3>
-
-<p>Filters, pumps, lights and decorations.</p>
-
-</div>
-
-<div class="card">
-
-🦐
-
-<h3>Shrimp</h3>
-
-<p>Freshwater ornamental shrimp.</p>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- WHY -->
-
-<section class="section">
-
-<h2>Why Choose Us</h2>
+<h2 data-i18n="product_title"></h2>
 
 <div class="grid">
 
-<div class="card">
-
-✔ Healthy Fish
-
-</div>
-
-<div class="card">
-
-✔ Quality Products
-
-</div>
-
-<div class="card">
-
-✔ Friendly Service
-
-</div>
-
-<div class="card">
-
-✔ Affordable Prices
-
-</div>
+<div class="card" data-i18n="p1"></div>
+<div class="card" data-i18n="p2"></div>
+<div class="card" data-i18n="p3"></div>
+<div class="card" data-i18n="p4"></div>
+<div class="card" data-i18n="p5"></div>
+<div class="card" data-i18n="p6"></div>
 
 </div>
 
 </section>
 
 <!-- CONTACT -->
+<section id="contact" class="section">
 
-<section id="contact" class="section dark">
-
-<h2>Visit Our Shop</h2>
+<h2 data-i18n="contact_title"></h2>
 
 <div class="contact">
 
 <div class="info">
 
-<h3>📍 Address</h3>
+<p data-i18n="address"></p>
 
-<p>
+<p>☎ 012-719 7886 / 016-658 0408</p>
 
-7G, Jalan Perdana 5<br>
+<p>💬 WhatsApp same number</p>
 
-Taman Indah Perdana<br>
-
-52100 Kuala Lumpur<br>
-
-Wilayah Persekutuan Kuala Lumpur
-
-</p>
-
-<h3>☎ Phone</h3>
-
-<p>
-
-<a href="tel:0127197886">012-719 7886</a><br>
-
-<a href="tel:0166580408">016-658 0408</a>
-
-</p>
-
-<h3>💬 WhatsApp</h3>
-
-<p>
-
-<a href="https://wa.me/60127197886" target="_blank">
-
-012-719 7886
-
-</a>
-
-<br>
-
-<a href="https://wa.me/60166580408" target="_blank">
-
-016-658 0408
-
-</a>
-
-</p>
-
-<h3>🕒 Business Hours</h3>
-
-<p>
-
-Mon - Sat
-
-12:30 PM - 10:00 PM
-
-<br><br>
-
-Sun
-
-12:30 PM - 8:00 PM
-
-</p>
+<p data-i18n="hours"></p>
 
 </div>
 
 <div class="map">
 
 <iframe
-
-src="https://maps.google.com/maps?q=7G%20Jalan%20Perdana%205%20Taman%20Indah%20Perdana%2052100%20Kuala%20Lumpur&t=&z=16&ie=UTF8&iwloc=&output=embed"
-
-loading="lazy"
-
-allowfullscreen>
-
+src="https://maps.google.com/maps?q=7G%20Jalan%20Perdana%205%20Kuala%20Lumpur&output=embed">
 </iframe>
 
 </div>
@@ -298,23 +123,9 @@ allowfullscreen>
 
 <footer>
 
-<p>
-
-© 2026 Nam Hoi Aquarium Shop
-
-</p>
+<p data-i18n="footer"></p>
 
 </footer>
-
-<a href="https://wa.me/60127197886"
-
-class="floating-whatsapp"
-
-target="_blank">
-
-💬
-
-</a>
 
 <script src="script.js"></script>
 
