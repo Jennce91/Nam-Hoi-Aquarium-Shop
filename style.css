@@ -22,11 +22,11 @@ nav a {
 
 /* HERO */
 .hero {
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
-/* ⭐ FIXED BANNER */
+/* ⭐ FIXED BANNER (完全顯示 + 不變形) */
 .hero-banner {
   width: 100%;
   height: 300px;
@@ -73,12 +73,4 @@ footer {
   text-align: center;
   padding: 20px;
   background: #06131d;
-}
-hero-banner {
-  width: 100% !important;
-  max-width: 100% !important;
-  height: 300px !important;
-  object-fit: cover !important;
-  object-position: center !important;
-  display: block !important;
 }
