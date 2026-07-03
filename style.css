@@ -5,19 +5,19 @@ body {
   color: white;
 }
 
+/* HEADER */
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 15px 30px;
   background: #0b2a3d;
   position: sticky;
   top: 0;
+  z-index: 1000;
 }
 
-.logo {
-  font-weight: bold;
-}
-
+/* NAV */
 nav a {
   margin: 0 10px;
   color: white;
@@ -29,12 +29,21 @@ nav a {
   padding: 5px 10px;
 }
 
+/* HERO (BANNER ONLY) */
 .hero {
-  text-align: center;
-  padding: 80px 20px;
-  background: linear-gradient(to right, #0b3a5a, #0c1f2f);
+  padding: 0;
+  margin: 0;
+  background: #071824;
 }
 
+/* YOUR BIG LOGO BANNER */
+.hero-banner {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* SECTIONS */
 .section {
   padding: 50px 20px;
   text-align: center;
@@ -44,6 +53,7 @@ nav a {
   background: #0b2a3d;
 }
 
+/* PRODUCTS GRID */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -57,6 +67,7 @@ nav a {
   border-radius: 10px;
 }
 
+/* CONTACT */
 .contact-box {
   max-width: 600px;
   margin: auto;
@@ -76,15 +87,9 @@ nav a {
   background: #25D366;
 }
 
+/* FOOTER */
 footer {
   text-align: center;
   padding: 20px;
   background: #06131d;
-}
-.hero-logo {
-    width: 100%;
-    max-width: 900px;
-    display: block;
-    margin: 0 auto 30px;
-    border-radius: 15px;
 }
