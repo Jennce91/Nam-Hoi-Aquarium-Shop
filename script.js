@@ -1,6 +1,7 @@
 
+
 // ==========================
-// 多語系翻譯系統（保留核心）
+// translations
 // ==========================
 
 const translations = {
@@ -29,7 +30,7 @@ contact_title:"聯絡我們",
 address:"7G Jalan Perdana 5 Kuala Lumpur",
 hours:"營業時間：Mon-Sun",
 
-footer:"© 2026 南海水族館"
+footer:"© 2010 Nam Hoi Aquarium Shop 南海水族館"
 },
 
 en:{
@@ -56,7 +57,7 @@ contact_title:"Contact Us",
 address:"7G Jalan Perdana 5 Kuala Lumpur",
 hours:"Business Hours: Mon-Sun",
 
-footer:"© 2026 Nam Hoi Aquarium"
+footer:"© 2010 Nam Hoi Aquarium Shop 南海水族館"
 },
 
 bm:{
@@ -83,18 +84,18 @@ contact_title:"Hubungi Kami",
 address:"7G Jalan Perdana 5 Kuala Lumpur",
 hours:"Waktu Operasi: Isnin-Ahad",
 
-footer:"© 2010 Nam Hoi Aquarium"
+footer:"© 2010 Nam Hoi Aquarium Shop 南海水族館"
 }
 };
 
 // ==========================
-// 語言切換功能（核心）
+// FIX：保證 DOM 載入後才執行
 // ==========================
 
 function setLang(lang){
 
 document.querySelectorAll("[data-i18n]").forEach(el=>{
-let key = el.dataset.i18n;
+const key = el.dataset.i18n;
 
 if(translations[lang] && translations[lang][key]){
 el.innerText = translations[lang][key];
@@ -103,8 +104,13 @@ el.innerText = translations[lang][key];
 
 }
 
+// ⭐⭐ 重點：掛到 window（解決你按鈕沒反應）
+window.setLang = setLang;
+
 // ==========================
-// 預設語言（英文）
+// DOM ready + default language
 // ==========================
 
+document.addEventListener("DOMContentLoaded", () => {
 setLang("en");
+});
