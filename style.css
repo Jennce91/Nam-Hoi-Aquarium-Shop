@@ -38,9 +38,10 @@ nav a {
 
 /* YOUR BIG LOGO BANNER */
 .hero-banner {
-  width: 100%;
-  height: auto;
-  display: block;
+ width: 100%;
+  height: 280px;
+  object-fit: cover;
+  object-position: center;
 }
 
 /* SECTIONS */
