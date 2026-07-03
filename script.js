@@ -1,6 +1,6 @@
 const translations = {
 
-zh: {
+zh:{
 nav_about:"關於我們",
 nav_products:"產品",
 nav_contact:"聯絡",
@@ -27,7 +27,7 @@ hours:"營業時間：Mon-Sun",
 footer:"© 2026 南海水族館"
 },
 
-en: {
+en:{
 nav_about:"About",
 nav_products:"Products",
 nav_contact:"Contact",
@@ -36,7 +36,7 @@ hero_title:"Welcome to Nam Hoi Aquarium",
 hero_sub:"Fish • Plants • Aquarium Equipment",
 
 about_title:"About Us",
-about_text:"We provide healthy fish, aquatic plants and aquarium supplies.",
+about_text:"We provide healthy fish and aquarium supplies.",
 
 product_title:"Products",
 
@@ -54,16 +54,16 @@ hours:"Business Hours: Mon-Sun",
 footer:"© 2026 Nam Hoi Aquarium"
 },
 
-bm: {
+bm:{
 nav_about:"Tentang",
 nav_products:"Produk",
 nav_contact:"Hubungi",
 
 hero_title:"Selamat Datang ke Nam Hoi Aquarium",
-hero_sub:"Ikan Hiasan • Tumbuhan Akuatik • Peralatan Akuarium",
+hero_sub:"Ikan Hiasan • Tumbuhan • Peralatan Akuarium",
 
 about_title:"Tentang Kami",
-about_text:"Kami menyediakan ikan sihat, tumbuhan akuatik dan aksesori akuarium.",
+about_text:"Kami menyediakan ikan sihat dan aksesori akuarium.",
 
 product_title:"Produk",
 
@@ -83,11 +83,9 @@ footer:"© 2026 Nam Hoi Aquarium"
 };
 
 function setLang(lang){
-
 document.querySelectorAll("[data-i18n]").forEach(el=>{
 el.innerText = translations[lang][el.dataset.i18n];
 });
-
 }
 
-setLang("zh");
+setLang("en");
