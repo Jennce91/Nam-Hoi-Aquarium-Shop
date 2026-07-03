@@ -74,3 +74,12 @@ footer {
   padding: 20px;
   background: #06131d;
 }
+img.hero-banner {
+  width: 100vw !important;
+  height: 300px !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  display: block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
