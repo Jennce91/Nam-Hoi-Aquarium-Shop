@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Nam Hoi Aquarium Shop | 南海水族館 | Kedai Akuarium Nam Hoi</title>
+<title>Nam Hoi Aquarium Shop</title>
 
 <link rel="stylesheet" href="style.css">
 </head>
@@ -14,67 +14,58 @@
 
 <!-- ================= HEADER ================= -->
 <header>
+  <div class="container">
 
-<div class="container">
+    <h1>Nam Hoi Aquarium</h1>
 
-<h1>Nam Hoi Aquarium</h1>
+    <div class="lang-switch">
+      <button onclick="setLang('zh')">中文</button>
+      <button onclick="setLang('en')">EN</button>
+      <button onclick="setLang('bm')">BM</button>
+    </div>
 
-<!-- Language -->
-<div class="lang-switch">
-<button onclick="setLang('zh')">中文</button>
-<button onclick="setLang('en')">EN</button>
-<button onclick="setLang('bm')">BM</button>
-</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
-<!-- NAV -->
-<nav>
-<a href="#about" data-i18n="nav_about">About</a>
-<a href="#products" data-i18n="nav_products">Products</a>
-<a href="#contact" data-i18n="nav_contact">Contact</a>
-</nav>
-
-</div>
+  </div>
 </header>
 
 <!-- ================= HERO ================= -->
 <section class="hero">
 
-<!-- ⭐ 你已改成 banner -->
-<img src="banner.png" class="hero-banner" alt="Nam Hoi Aquarium Banner">
+  <img src="banner.png" class="hero-banner" alt="banner">
 
-<!-- TEXT OVERLAY -->
-<div class="hero-text">
+  <div class="hero-text">
 
-<h2 data-i18n="hero_title">Welcome</h2>
+    <!-- ⭐ 這裡是輪播 -->
+    <h2 id="heroText" class="hero-title"></h2>
 
-<p data-i18n="hero_sub">Aquarium Shop</p>
+    <p class="hero-sub">
+      專業水族用品｜觀賞魚｜水草｜魚缸設備
+    </p>
 
-<p>
-專業水族用品｜觀賞魚｜水草｜魚缸設備<br>
-Professional Aquarium Shop • Fish • Plants • Aquarium Equipment<br>
-Kedai Akuarium Profesional • Ikan Hiasan • Tumbuhan Akuatik
-</p>
+    <div>
+      <a class="btn" href="https://wa.me/60127197886" target="_blank">WhatsApp</a>
 
-<!-- BUTTONS -->
-<div>
-<a class="btn" href="https://wa.me/60127197886" target="_blank">WhatsApp</a>
+      <a class="btn btn-outline"
+         href="https://maps.google.com/?q=7G+Jalan+Perdana+5+Kuala+Lumpur"
+         target="_blank">
+        Maps
+      </a>
+    </div>
 
-<a class="btn btn-outline"
-href="https://maps.google.com/?q=7G+Jalan+Perdana+5+Kuala+Lumpur"
-target="_blank">
-Maps
-</a>
-</div>
-
-</div>
+  </div>
 </section>
 
 <!-- ================= ABOUT ================= -->
 <section id="about" class="section">
 
-<h2 data-i18n="about_title">About Us</h2>
+<h2>About Us</h2>
 
-<p data-i18n="about_text">
+<p>
 We provide healthy fish and aquarium supplies.
 </p>
 
@@ -83,16 +74,16 @@ We provide healthy fish and aquarium supplies.
 <!-- ================= PRODUCTS ================= -->
 <section id="products" class="section dark">
 
-<h2 data-i18n="product_title">Products</h2>
+<h2>Products</h2>
 
 <div class="grid">
 
-<div class="card" data-i18n="p1">🐠 Fish</div>
-<div class="card" data-i18n="p2">🐟 Goldfish</div>
-<div class="card" data-i18n="p3">🌿 Plants</div>
-<div class="card" data-i18n="p4">🏝 Tank</div>
-<div class="card" data-i18n="p5">🧪 Accessories</div>
-<div class="card" data-i18n="p6">🦐 Shrimp</div>
+<div class="card">🐠 Fish</div>
+<div class="card">🐟 Goldfish</div>
+<div class="card">🌿 Plants</div>
+<div class="card">🏝 Tank</div>
+<div class="card">🧪 Accessories</div>
+<div class="card">🦐 Shrimp</div>
 
 </div>
 
@@ -101,25 +92,16 @@ We provide healthy fish and aquarium supplies.
 <!-- ================= CONTACT ================= -->
 <section id="contact" class="section">
 
-<h2 data-i18n="contact_title">Contact</h2>
+<h2>Contact</h2>
 
-<p>
-📍 7G, Jalan Perdana 5, Taman Indah Perdana, Kuala Lumpur
-</p>
+<p>📍 7G, Jalan Perdana 5, Taman Indah Perdana, Kuala Lumpur</p>
 
-<p>
-📞 012-719 7886 / 016-658 0408
-</p>
+<p>📞 012-719 7886 / 016-658 0408</p>
 
-<p>
-💬 WhatsApp 012-719 7886 / 016-658 0408
-</p>
+<p>💬 WhatsApp 012-719 7886 / 016-658 0408</p>
 
-<p data-i18n="hours">
-🕒 Mon-Sat 12:30pm - 10:00pm | Sun 12:30pm - 8:00pm
-</p>
+<p>🕒 Mon-Sat 12:30pm - 10:00pm | Sun 12:30pm - 8:00pm</p>
 
-<!-- MAP -->
 <div class="map">
 <iframe
 src="https://maps.google.com/maps?q=7G%20Jalan%20Perdana%205%20Kuala%20Lumpur&output=embed">
@@ -130,12 +112,9 @@ src="https://maps.google.com/maps?q=7G%20Jalan%20Perdana%205%20Kuala%20Lumpur&ou
 
 <!-- ================= FOOTER ================= -->
 <footer>
-
-<p data-i18n="footer">© 2010 Nam Hoi Aquarium</p>
-
+<p>© 2010 Nam Hoi Aquarium</p>
 </footer>
 
-<!-- JS -->
 <script src="script.js"></script>
 
 </body>
