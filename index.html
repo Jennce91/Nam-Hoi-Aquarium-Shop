@@ -1,102 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Nam Hoi Aquarium</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nam Hoi Aquarium</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- NAV -->
 <header>
-   <div class="logo">
-    <img src="logo.png" alt="Nam Hoi Aquarium Logo" class="logo-img">
-  </div>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#products">Products</a>
-    <a href="#contact">Contact</a>
-
-    <button onclick="toggleLang()" class="lang-btn">中 / EN</button>
-  </nav>
+        <button onclick="toggleLang()" class="lang-btn">
+            中 / EN
+        </button>
+    </nav>
 </header>
 
-<!-- HERO -->
+<!-- Banner -->
 <section id="home" class="hero">
 
-  <img src="logo.png" alt="Nam Hoi Aquarium" class="hero-logo">
+    <img src="logo.png" alt="Nam Hoi Aquarium Banner" class="hero-banner">
 
-  <h1 data-en="Your Trusted Aquarium Store in KL"
-      data-cn="吉隆坡值得信賴的水族專門店">
-      Your Trusted Aquarium Store in KL
-  </h1>
-
-  <p data-en="Fish • Tanks • Aquatic Plants • Accessories"
-     data-cn="觀賞魚 • 魚缸 • 水草 • 水族器材">
-     Fish • Tanks • Aquatic Plants • Accessories
-  </p>
 </section>
 
-<!-- ABOUT -->
+<!-- About -->
 <section id="about" class="section">
-  <h2 data-en="About Us" data-cn="關於我們">About Us</h2>
 
-  <p data-en="Nam Hoi Aquarium is a professional aquarium shop in Kuala Lumpur."
-     data-cn="Nam Hoi Aquarium 是位於吉隆坡的專業水族店。">
-     Nam Hoi Aquarium is a professional aquarium shop in Kuala Lumpur.
-  </p>
+<h2
+data-en="About Us"
+data-cn="關於我們">
+About Us
+</h2>
+
+<p
+data-en="Nam Hoi Aquarium is a professional aquarium shop in Kuala Lumpur."
+data-cn="Nam Hoi Aquarium 是位於吉隆坡的專業水族店。">
+
+Nam Hoi Aquarium is a professional aquarium shop in Kuala Lumpur.
+
+</p>
+
 </section>
 
-<!-- PRODUCTS -->
+<!-- Products -->
 <section id="products" class="section dark">
-  <h2 data-en="Products" data-cn="產品">Products</h2>
 
-  <div class="grid">
-    <div class="card">🐟 Tropical Fish</div>
-    <div class="card">🐠 Goldfish</div>
-    <div class="card">🏝 Aquarium Tanks</div>
-    <div class="card">🌿 Aquatic Plants</div>
-    <div class="card">⚙ Accessories</div>
-  </div>
+<h2
+data-en="Products"
+data-cn="產品">
+Products
+</h2>
+
+<div class="grid">
+
+<div class="card">🐟 Tropical Fish</div>
+
+<div class="card">🐠 Goldfish</div>
+
+<div class="card">🏝 Aquarium Tanks</div>
+
+<div class="card">🌿 Aquatic Plants</div>
+
+<div class="card">⚙ Accessories</div>
+
+</div>
+
 </section>
 
-<!-- CONTACT -->
+<!-- Contact -->
 <section id="contact" class="section">
-  <h2 data-en="Contact Us" data-cn="聯絡我們">Contact Us</h2>
 
-  <div class="contact-box">
-    <p>📍 7G, Jalan Perdana 5, Taman Indah Perdana, 52100 Kuala Lumpur</p>
+<h2
+data-en="Contact Us"
+data-cn="聯絡我們">
+Contact Us
+</h2>
 
-    <p>📞 016-658 0408 / 012-719 7886</p>
+<div class="contact-box">
 
-    <a class="btn" href="tel:0166580408">Call Now</a>
+<p>📍 7G, Jalan Perdana 5, Taman Indah Perdana, 52100 Kuala Lumpur</p>
 
-    <a class="btn whatsapp"
-       href="https://wa.me/60127197886"
-       target="_blank">
-       WhatsApp
-    </a>
-  </div>
+<p>📞 016-6580408 / 012-7197886</p>
+
+<a class="btn" href="tel:0166580408">
+Call Now
+</a>
+
+<a
+class="btn whatsapp"
+href="https://wa.me/60127197886"
+target="_blank">
+
+WhatsApp
+
+</a>
+
+</div>
+
 </section>
 
-<!-- MAP -->
-<section class="section dark">
-  <h2>Location</h2>
+<!-- Google Map -->
 
-  <iframe
-    src="https://www.google.com/maps?q=7G,Jalan%20Perdana%205,Kuala%20Lumpur&output=embed"
-    width="100%" height="300" style="border:0;">
-  </iframe>
+<section class="section dark">
+
+<h2>Location</h2>
+
+<iframe
+src="https://www.google.com/maps?q=7G,Jalan%20Perdana%205,Kuala%20Lumpur&output=embed"
+width="100%"
+height="350"
+style="border:0;">
+</iframe>
+
 </section>
 
 <footer>
-  © 2026 Nam Hoi Aquarium
+
+© 2026 Nam Hoi Aquarium
+
 </footer>
 
 <script src="script.js"></script>
+
 </body>
 </html>
