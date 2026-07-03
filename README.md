@@ -1,2 +1,2 @@
 Image files
-![Uploading logo.png…]()
+![logo.png…]()
