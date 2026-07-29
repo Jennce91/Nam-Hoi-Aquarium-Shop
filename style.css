@@ -11,7 +11,6 @@ color:white;
 line-height:1.6;
 }
 
-
 /* HEADER */
 header{
 position:sticky;
@@ -45,40 +44,43 @@ cursor:pointer;
 }
 
 
-/* ================= HERO ================= */
-
+/* HERO */
 .hero{
 position:relative;
 width:100%;
+height:clamp(350px,45vw,700px);
 overflow:hidden;
 }
 
 
 .hero-banner{
+position:absolute;
+top:0;
+left:0;
+
 width:100%;
-height:auto;
+height:100%;
+
+object-fit:cover;
+object-position:center;
+
 display:block;
 }
 
 
 /* 漸層遮罩 */
-
 .hero::before{
 content:"";
 position:absolute;
 inset:0;
-background:linear-gradient(
-to right,
-rgba(0,0,0,0.55),
-rgba(0,0,0,0.2)
-);
+background:linear-gradient(to right,rgba(0,0,0,0.55),rgba(0,0,0,0.2));
 z-index:1;
 }
 
 
 .hero-text{
-
 position:absolute;
+
 top:0;
 left:0;
 right:0;
@@ -90,181 +92,101 @@ justify-content:center;
 align-items:center;
 
 text-align:center;
-
 z-index:2;
 
 padding:20px;
-
 }
 
 
 .hero-title{
-
-font-size:clamp(24px,3vw,45px);
-
+font-size:clamp(26px,4vw,60px);
 font-weight:700;
-
 text-shadow:0 2px 10px rgba(0,0,0,0.6);
-
 margin-bottom:10px;
-
 }
 
 
 .hero-sub{
-
-font-size:clamp(14px,1.8vw,22px);
-
+font-size:clamp(14px,2vw,22px);
 margin-bottom:10px;
-
 }
 
 
 /* BUTTON */
-
 .btn{
-
 display:inline-block;
-
 padding:10px 20px;
-
 background:#1aa3ff;
-
 color:white;
-
 text-decoration:none;
-
 margin:5px;
-
 border-radius:6px;
-
 }
 
-
 .btn-outline{
-
 background:transparent;
-
 border:1px solid white;
-
 }
 
 
 /* SECTIONS */
-
 .section{
-
 padding:60px 20px;
-
 text-align:center;
-
 }
 
-
 .dark{
-
 background:#0b2a3d;
-
 }
 
 
 /* GRID */
-
 .grid{
-
 display:grid;
-
 grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
-
 gap:15px;
-
 margin-top:20px;
-
 }
 
-
 .card{
-
 background:#123d55;
-
 padding:20px;
-
 border-radius:10px;
-
 }
 
 
 /* MAP */
-
 .map iframe{
-
 width:100%;
-
 height:300px;
-
 border:0;
-
 margin-top:20px;
-
 }
 
 
 /* FOOTER */
-
 footer{
-
 padding:20px;
-
 text-align:center;
-
 background:#06131d;
-
 color:#aaa;
-
 }
 
 
-
-/* ================= MOBILE ================= */
-
+/* MOBILE */
 @media(max-width:768px){
 
-
-.hero-title{
-
-font-size:26px;
-
-}
-
-
-.hero-sub{
-
-font-size:14px;
-
-}
-
-
 .container{
-
 flex-direction:column;
-
 text-align:center;
-
 }
-
 
 nav a{
-
 margin:5px;
-
 }
-
 
 .btn{
-
 padding:8px 15px;
-
 }
-
 
 }
