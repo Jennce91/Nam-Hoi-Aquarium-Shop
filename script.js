@@ -14,7 +14,8 @@ nav_contact:"聯絡",
 
 hero_title:"NAM HOI AQUARIUM 南海魚店",
 
-hero_sub:"專業水族用品｜觀賞魚｜水草｜魚缸設備",
+hero_sub:"專業水族用品｜觀賞魚｜水草｜魚缸設備｜魚缸與魚池服務",
+
 
 
 about_title:"關於我們",
@@ -39,6 +40,7 @@ p5:"🧪 水族用品",
 p6:"🦐 觀賞蝦",
 
 
+
 contact_title:"聯絡我們",
 
 address:"7G Jalan Perdana 5 Kuala Lumpur",
@@ -49,7 +51,6 @@ hours:"營業時間：Mon-Sat 12:30pm - 10:00pm | Sun 12:30pm - 8:00pm",
 footer:"© 2010 Nam Hoi Aquarium Shop 南海水族館"
 
 },
-
 
 
 
@@ -69,7 +70,8 @@ hero_title:"NAM HOI AQUARIUM 南海魚店",
 
 
 hero_sub:
-"Aquarium Supplies | Ornamental Fish | Aquatic Plants | Aquarium Equipment",
+"Aquarium Supplies | Ornamental Fish | Aquatic Plants | Aquarium Equipment | Aquarium & Pond Services",
+
 
 
 
@@ -81,7 +83,9 @@ about_text:
 
 
 
+
 product_title:"Products",
+
 
 
 p1:"🐠 Ornamental Fish",
@@ -101,7 +105,9 @@ p6:"🦐 Shrimp",
 contact_title:"Contact Us",
 
 
+
 address:"7G Jalan Perdana 5 Kuala Lumpur",
+
 
 
 hours:
@@ -110,6 +116,7 @@ hours:
 
 
 footer:"© 2010 Nam Hoi Aquarium Shop 南海水族館"
+
 
 },
 
@@ -134,7 +141,7 @@ hero_title:"NAM HOI AQUARIUM 南海魚店",
 
 
 hero_sub:
-"Bekalan Akuarium | Ikan Hiasan | Tumbuhan Akuatik | Peralatan Akuarium",
+"Bekalan Akuarium | Ikan Hiasan | Tumbuhan Akuatik | Peralatan Akuarium | Perkhidmatan Akuarium & Kolam",
 
 
 
@@ -172,8 +179,7 @@ contact_title:"Hubungi Kami",
 
 
 
-address:
-"7G Jalan Perdana 5 Kuala Lumpur",
+address:"7G Jalan Perdana 5 Kuala Lumpur",
 
 
 
@@ -182,9 +188,7 @@ hours:
 
 
 
-
-footer:
-"© 2010 Nam Hoi Aquarium Shop 南海水族館"
+footer:"© 2010 Nam Hoi Aquarium Shop 南海水族館"
 
 
 }
@@ -198,7 +202,6 @@ footer:
 // Language Function
 // ==========================
 
-
 function setLang(lang){
 
 
@@ -210,9 +213,7 @@ const key = el.dataset.i18n;
 
 if(translations[lang] && translations[lang][key]){
 
-
 el.innerText = translations[lang][key];
-
 
 }
 
@@ -224,10 +225,9 @@ el.innerText = translations[lang][key];
 
 
 
-// ⭐ 保留按鈕控制
+// 保留按鈕功能
 
 window.setLang = setLang;
-
 
 
 
