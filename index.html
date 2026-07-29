@@ -5,132 +5,341 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Nam Hoi Aquarium Shop</title>
+<title>Nam Hoi Aquarium</title>
 
 <link rel="stylesheet" href="style.css">
+
 </head>
+
 
 <body>
 
+
 <!-- ================= HEADER ================= -->
+
 <header>
-  <div class="container">
 
-    <h1>Nam Hoi Aquarium</h1>
+<div class="container">
 
-    <div class="lang-switch">
-      <button onclick="setLang('en')">ENG</button>
-      <button onclick="setLang('zh')">CN</button>
-      <button onclick="setLang('bm')">BM</button>
-    </div>
 
-    <nav>
-      <a href="#about" data-i18n="nav_about">About</a>
-      <a href="#products" data-i18n="nav_products">Products</a>
-      <a href="#contact" data-i18n="nav_contact">Contact</a>
-    </nav>
+<h1>
+Nam Hoi Aquarium
+</h1>
 
-  </div>
+
+<div class="lang-switch">
+
+<button onclick="setLang('en')">
+ENG
+</button>
+
+<button onclick="setLang('zh')">
+CN
+</button>
+
+<button onclick="setLang('bm')">
+BM
+</button>
+
+</div>
+
+
+<nav>
+
+<a href="#about" data-i18n="nav_about">
+About
+</a>
+
+<a href="#products" data-i18n="nav_products">
+Products
+</a>
+
+<a href="#contact" data-i18n="nav_contact">
+Contact
+</a>
+
+</nav>
+
+
+</div>
+
 </header>
 
+
+
+
 <!-- ================= HERO ================= -->
+
+
 <section class="hero">
 
-  <img src="banner.png" class="hero-banner" alt="banner">
 
-  <div class="hero-text">
+<img src="banner.png" class="hero-banner" alt="Nam Hoi Aquarium">
 
-    <h2 class="hero-title" data-i18n="hero_title">
-      Welcome to Nam Hoi Aquarium Shop 南海魚店
-    </h2>
 
-    <p class="hero-sub" data-i18n="hero_sub">
-      Fish • Plants • Aquarium Equipment
-    </p>
+<div class="hero-overlay"></div>
 
-    <div>
-      <a class="btn"
-         href="https://wa.me/60127197886"
-         target="_blank">
-        WhatsApp
-      </a>
 
-      <a class="btn btn-outline"
-         href="tel:+60127197886"
-         data-i18n="call">
-         Call
-      </a>
-    </div>
 
-  </div>
-</section>
+<div class="hero-text">
 
-<!-- ================= ABOUT ================= -->
-<section id="about" class="section">
 
-<h2 data-i18n="about_title">About Us</h2>
+<h2 class="hero-title" data-i18n="hero_title">
 
-<p data-i18n="about_text">
-We provide healthy fish and aquarium supplies.
+NAM HOI AQUARIUM 南海魚店
+
+</h2>
+
+
+<p class="hero-sub" data-i18n="hero_sub">
+
+Aquarium Supplies | Ornamental Fish | Aquatic Plants | Aquarium Equipment
+
 </p>
 
+
+
+<div class="hero-buttons">
+
+
+<a class="btn"
+href="https://wa.me/60127197886"
+target="_blank">
+
+WhatsApp
+
+</a>
+
+
+
+<a class="btn btn-outline"
+href="tel:+60127197886">
+
+Call
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
 </section>
 
+
+
+
+
+<!-- ================= ABOUT ================= -->
+
+
+<section id="about" class="section about">
+
+
+<h2 data-i18n="about_title">
+
+About Us
+
+</h2>
+
+
+
+<p class="about-text" data-i18n="about_text">
+
+We specialize in providing quality ornamental fish, aquatic plants, aquariums, and professional aquarium supplies.
+
+</p>
+
+
+</section>
+
+
+
+
+
+
 <!-- ================= PRODUCTS ================= -->
+
+
 <section id="products" class="section dark">
 
-<h2 data-i18n="product_title">Products</h2>
+
+<h2 data-i18n="product_title">
+
+Products
+
+</h2>
+
+
 
 <div class="grid">
 
-<div class="card" data-i18n="p1">🐠 Fish</div>
-<div class="card" data-i18n="p2">🐟 Goldfish</div>
-<div class="card" data-i18n="p3">🌿 Plants</div>
-<div class="card" data-i18n="p4">🏝 Tank</div>
-<div class="card" data-i18n="p5">🧪 Accessories</div>
-<div class="card" data-i18n="p6">🦐 Shrimp</div>
+
+
+<div class="card" data-i18n="p1">
+
+🐠 Ornamental Fish
 
 </div>
 
+
+
+<div class="card" data-i18n="p2">
+
+🐟 Goldfish
+
+</div>
+
+
+
+<div class="card" data-i18n="p3">
+
+🌿 Aquatic Plants
+
+</div>
+
+
+
+<div class="card" data-i18n="p4">
+
+🏝 Aquarium Tank
+
+</div>
+
+
+
+<div class="card" data-i18n="p5">
+
+🧪 Accessories
+
+</div>
+
+
+
+<div class="card" data-i18n="p6">
+
+🦐 Shrimp
+
+</div>
+
+
+
+</div>
+
+
 </section>
+
+
+
+
+
+
 
 <!-- ================= CONTACT ================= -->
-<section id="contact" class="section">
 
-<h2 data-i18n="contact_title">Contact</h2>
+
+<section id="contact" class="section contact">
+
+
+
+<h2 data-i18n="contact_title">
+
+Contact Us
+
+</h2>
+
+
+
 
 <p>
-📍 <span data-i18n="address">
-7G, Jalan Perdana 5, Taman Indah Perdana, Kuala Lumpur
+
+📍
+
+<span data-i18n="address">
+
+7G Jalan Perdana 5 Kuala Lumpur
+
 </span>
+
 </p>
 
+
+
+
 <p>
+
 📞 012-719 7886 / 016-658 0408
+
 </p>
 
+
+
+
 <p>
+
 💬 WhatsApp 012-719 7886 / 016-658 0408
+
 </p>
+
+
+
 
 <p data-i18n="hours">
+
 🕒 Mon-Sat 12:30pm - 10:00pm | Sun 12:30pm - 8:00pm
+
 </p>
 
+
+
+
 <div class="map">
+
+
 <iframe
+
 src="https://maps.google.com/maps?q=7G%20Jalan%20Perdana%205%20Kuala%20Lumpur&output=embed">
+
 </iframe>
+
+
 </div>
+
+
 
 </section>
 
+
+
+
+
+
+
 <!-- ================= FOOTER ================= -->
+
+
 <footer>
-<p data-i18n="footer">© 2010 Nam Hoi Aquarium</p>
+
+
+<p data-i18n="footer">
+
+© 2010 Nam Hoi Aquarium Shop 南海水族館
+
+</p>
+
+
 </footer>
+
+
+
+
+
 
 <script src="script.js"></script>
 
+
 </body>
+
 </html>
