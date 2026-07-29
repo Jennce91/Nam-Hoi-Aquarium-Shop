@@ -92,6 +92,8 @@ color:#38bdf8;
 
 
 
+
+
 /* LANGUAGE */
 
 
@@ -116,6 +118,7 @@ transition:.3s;
 }
 
 
+
 .lang-switch button:hover{
 
 background:#38bdf8;
@@ -123,6 +126,7 @@ background:#38bdf8;
 color:#00111f;
 
 }
+
 
 
 
@@ -198,15 +202,20 @@ z-index:1;
 
 
 
+
+/* 修改：標題容器 */
+
 .hero-text{
 
 position:relative;
 
 z-index:2;
 
-width:90%;
+width:100%;
 
-max-width:1000px;
+max-width:none;
+
+padding:0 20px;
 
 text-align:center;
 
@@ -214,9 +223,13 @@ text-align:center;
 
 
 
+
+
+/* 修改：標題 */
+
 .hero-title{
 
-font-size:clamp(24px,3.5vw,55px);
+font-size:clamp(24px,3.2vw,55px);
 
 font-weight:800;
 
@@ -224,13 +237,19 @@ color:white;
 
 white-space:nowrap;
 
+display:inline-block;
+
 text-shadow:
+
 0 0 15px #0284c7,
+
 0 0 30px #0369a1;
 
 margin-bottom:20px;
 
 }
+
+
 
 
 
@@ -314,6 +333,8 @@ background:transparent;
 
 
 
+
+
 /* ================= SECTION ================= */
 
 
@@ -374,6 +395,7 @@ linear-gradient(
 );
 
 }
+
 
 
 
@@ -477,6 +499,8 @@ margin-top:25px;
 
 
 
+
+
 /* ================= FOOTER ================= */
 
 
@@ -494,6 +518,7 @@ color:#94a3b8;
 border-top:1px solid rgba(56,189,248,.2);
 
 }
+
 
 
 
@@ -544,7 +569,9 @@ min-height:500px;
 
 .hero-title{
 
-font-size:34px;
+font-size:26px;
+
+white-space:normal;
 
 }
 
